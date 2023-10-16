@@ -1,0 +1,53 @@
+Last Lecture
+1 Simple Pgm
+	demo1.ts
+	console.log("Hello world");
+	console.log('...')
+	console.log(`...`);
+	tsc demo1.ts & node demo1.js
+	
+2 variables
+	var a1;
+	
+3 data types
+	- number(int short float double,long),string(''/""),boolean,any(number,string,boolean),misc=>null & undefined => data type as well as value ,void
+	
+	var a:number=10;
+	console.log(`,jbd,zhfb ${a} `);
+	
+	var str!:string;
+var a=52;
+	
+	
+4 literal
+	var a:number|string;
+	
+	var a:52|boolean;
+	
+5 type assertion
+
+	 var a:any 
+	 
+	 1 Angle bracket
+		var temp=(<string> a);
+		
+	2 as syntax
+		var temp=(a as string)
+	
+
+summmary
+1 How Pgm Is run?
+2 Which data type is present?
+3 What is Forward declaration Defination?
+4 how we can assign the data type?
+5 what is literal?
+6 What is type assertion?
+7 how we can type assertion to a variable?
+
+Today Lecture
+1 Operators
+2 Control statement
+3 Loop statement
+4 var vs let vs const
+5 types of functions
+
