@@ -1,0 +1,45 @@
+Last Lecture
+1 Operators
+	airthamthic,logical,bitwise,assignment ==,=== strongly equality it checks value as well as data type,ternary,unary 
+2 Control statement
+	if,if-else,switch,break,continue
+3 Loop statement
+	while,do-while , for(var i=0;i<4;i++){
+		
+	}
+4 var vs let vs const
+var =>  global scope 
+let => within a nearest block => {},file block 
+const => scope global & local 
+5 types of functions
+	function add1(){
+	...
+	}
+	
+	add1();
+	
+	function add2(a:number,b:number){
+		...
+	}
+	
+	add2(10,2);
+	
+	function add3():number{
+		return (8+8)
+	}
+	let res=add3();
+	
+	function add2(a:number,b:number):number{
+		return a+b
+	}
+	
+	console.log(""+add2(10,2));
+
+Today Lecture
+1 anonymous functions
+2 fat arrow functions
+3 optional parameter functions
+4 default parameter functions
+
+
+
