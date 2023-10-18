@@ -1,0 +1,57 @@
+Last Lecture
+1 anonymous functions
+	let temp1=function (){
+	....
+	}
+	
+	temp1();
+	
+	let temp2=function (a:number,b:number):number{
+	return (a+b);
+	}
+	
+	let res=temp2(10,20);
+	...
+	
+2 fat arrow functions
+	
+	let temp3=()=>{
+	...
+	}	
+	
+	temp3();
+	
+	let temp3=(a:number,b:number):number=>{
+	return (a+b)
+	}	
+	
+	let res=temp3(10,2);
+	
+3 optional parameter functions
+	
+	function add1(a?:number,b?:number){
+	....
+	}
+	add1()
+	
+4 default parameter functions
+	
+		function add1(a:number,b:number=10){
+	....
+	}
+	
+	add1(20,30);
+	
+		function add1(a:number=10,b?:number){
+	....
+	}
+
+Today Lecture
+1 Basics of Array
+2 join method
+3 foreach method 
+4 Rest Parameter functions
+5 Push & pop Method
+
+
+
