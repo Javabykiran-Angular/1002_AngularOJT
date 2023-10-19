@@ -1,0 +1,49 @@
+Last Lecture
+1 Basics of Array
+	let a:number[]=[10,20,30];
+	let a:number[]=[];
+	let a=[2.5,'sumit'];
+	let a:any[]=[...];
+	...
+	
+2 join method
+		
+		console.log(a);
+		
+	console.log(a.join(" "));
+	
+	
+3 foreach method 
+	
+	a.forEach((myvalue,i,arr)=>{
+		console.log(myvalue+i+arr);
+	});
+	
+	
+4 Rest Parameter functions
+
+	function display(str:string,...item:number[]){
+		....
+		console.log(item)
+	}
+	display('...',10,23,60);
+	
+
+5 Push & pop Method
+let a:number[]=[];
+a.push(12,45,85);
+let res=a.pop();
+
+
+Today Lecture
+1 Splice
+2 slice
+3 map
+4 destructor of array
+5 swap 2 variable without using 3rd variable?
+4 write a function to return multiple value/operation to collect into the variable
+ 
+
+
+
+
