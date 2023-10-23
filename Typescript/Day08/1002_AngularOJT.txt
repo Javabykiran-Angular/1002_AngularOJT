@@ -1,0 +1,50 @@
+Last Lecture
+1 Splice
+	let a:number[]=[...]
+	a.splice(2,0,45);
+	a.splice(2,1);
+	a.splice(3,1,89);
+	a.splice(2,1,90,100);
+	
+2 slice
+	let temp=a.slice(1,6);
+	let temp=a.slice(1)
+3 map
+	let temp=a.map((value)=>{
+		return (value*value)
+	})
+	....
+4 destructor of array
+	a=[....];
+	let [t1,t2,t3,t4]=a;
+	let [t1,...arr]=a;
+5 swap 2 variable without using 3rd variable?
+	let a=10;
+	let b=30;
+	[a,b]=[b,a];
+	
+4 write a function to return multiple value/operation to collect into the variable.
+	function operation(a:number,b:number){
+		return [a+b,a-b,a*b];
+	}
+	
+ let [add,sub,mul]=operation(10,2);
+ ....
+
+Today Lecture
+1 Shallow Copy & deep Copy (Js Interview Question)
+2 json Object 
+3 Array of Object 
+
+summery
+1 What is shallow copy ?
+2 What is Deep copy ? 
+3 What is json?
+4 how to access json?
+5 what is array of json?
+6 how we access using foreach?
+ 
+
+
+
+
