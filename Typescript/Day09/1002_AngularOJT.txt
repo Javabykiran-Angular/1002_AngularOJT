@@ -1,0 +1,102 @@
+Last Lecture
+1 Shallow Copy & deep Copy (Js Interview Question)
+	let a=10;
+	let b=a;
+	b=20;
+	
+	let arr=[...];
+	let arr1=arr;
+	arr1[1]=56;
+	
+	
+	let [...arr1]=arr;
+	arr1[2]=45;
+	
+	
+2 json Object 
+	let obj={
+		id:9,
+		"fname":'..',
+		lname:''
+	}
+	1 dot
+	2 square
+	console.log("
+		id :: obj.id
+		...
+	")
+	
+	obj["id"]
+	
+3 Array of Object 
+	
+	let arrobj=[
+		{
+			id:9,
+			"fname":'..',
+			lname:'',
+			country:{
+				cid:9,
+				cname:''
+			},
+			month:[''],
+			result:[
+				....
+			]
+		},
+	{
+		id:9,
+		"fname":'..',
+		lname:''
+	},
+	{
+		id:9,
+		"fname":'..',
+		lname:''
+	}
+	];
+	
+	for(let i:number=0;i<arrobj.length;i++){
+		arrobj[i].id
+		arrobj[i].country.cname;
+		arrobj[i]..month
+		
+		arrobj[i].result.foreach((item)=>{
+			item.subj
+			item.marks
+		})		
+	}
+
+summery
+1 What is shallow copy ?
+2 What is Deep copy ? 
+3 What is json?
+4 how to access json?
+5 what is array of json?
+6 how we access using foreach?
+
+Today Lecture
+1 Additional Features of typescript
+2 class,property,object
+3 method
+4 constructor
+5 Access Specifier
+6 Access in same package
+7 Access in different package
+
+summery
+1 How to create class in typescript?
+2 How to method?
+3 How to create Object?
+4 Where to apply access specifier?
+5 How to access class in same package?
+
+
+
+
+
+ 
+
+
+
+
