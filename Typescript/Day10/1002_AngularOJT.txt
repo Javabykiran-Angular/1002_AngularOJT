@@ -1,0 +1,80 @@
+Last Lecture
+1 Additional Features of typescript
+2 class,property,object
+
+export class Myclass{
+	public id:number;
+	private fname:string;
+	protected lname:string;
+	
+	constructor(id:number,l:string,...){
+		this.id=id;
+		this.fname=l;
+		...
+	}
+	
+	display(){
+		console.log(`
+			Id		:: ${this.id}
+			first name	:: ${this.fname}
+			...
+		`)
+	}
+	
+}
+
+let obj=new Myclass(...);
+obj.display();
+
+function add(a:number,b:number):number{
+	return (a+b);
+}
+lt pi=3.14;
+
+demo2.ts
+
+import {Myclass,add,pi} from './demo1';
+
+let obj=new Myclass(...);
+obj.display();
+...
+
+
+myfolder
+	demo3.ts
+import {Myclass} from '../day09/demo1';
+...
+	
+3 method
+4 constructor
+5 Access Specifier
+6 Access in same package
+7 Access in different package
+
+summary & Interview Questions
+1 How to create class in typescript?
+2 How to method?
+3 How to create Object?
+4 Where to apply access specifier?
+5 How to access class in same package?
+
+Today Lecture
+1 Inheritance/is reationship
+2 Method Override
+3 Interface
+4 composition/has a relation/Aggrigation
+
+
+summary & Interview Questions
+1 How many types inheritance?
+2 What is method override?
+3 What is interface?
+4 How has a reationship is work?
+
+
+
+ 
+
+
+
+
