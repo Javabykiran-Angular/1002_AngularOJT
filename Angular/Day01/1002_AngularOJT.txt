@@ -1,0 +1,97 @@
+Last Lecture
+1 Inheritance/is reationship
+export	class Shape{
+		myarea(){
+		...
+		}
+	}
+	
+
+export class Circle extends Shape
+{
+	radius:number;
+	area:number;
+	
+	constructor(r:number){
+		super();
+		this.radius=r;
+		this.area=0;
+	}
+	
+	override myarea(){
+		this.area=3.14*...
+	}
+	
+	display(){
+			.....
+	}
+}
+....
+
+let obj=new Circle(2);
+obj.myarea();
+obj.display();
+
+....
+
+2 Method Override
+3 Interface
+export	interface Employee{
+		fname:string;
+		lname:string;
+		fullname?:string;
+		display();
+	}
+	
+export class EmployeeDetails implements Employee
+{
+	fname:string;
+	lname:string;
+	salary:number;
+	dept:Department;
+	
+	constructor(f:string,...,role:string){
+		this.fname=f;
+		...
+		this.dept=new Department(role);
+	}
+	
+	display(){
+		....
+		this.dept.getRole()
+	}
+
+}
+
+export class Department{
+	private role:string;
+	
+	// 
+	getRole(){
+		return this.role
+	}
+	
+	setRole(r:string){
+		this.role=r;
+	}
+}
+
+4 composition/has a relation/Aggrigation
+
+
+summary & Interview Questions
+1 How many types inheritance?
+2 What is method override?
+3 What is interface?
+4 How has a reationship is work?
+
+Today Lecture
+1 Angular S/W Installation
+
+summary & Interview Questions
+Not Allowed for this Session
+ 
+
+
+
+
