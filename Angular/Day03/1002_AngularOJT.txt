@@ -1,0 +1,127 @@
+Last Lecture
+1 What is Angular?
+	- it is front end technology
+	- It is a freamwork
+	- It is component orientated arch.
+	- Angular (google) , React js(facebook ), embber js,vue js , JSP, flutter 
+	- gmail,github,sbi mutual funds,ganna.com,walmart 
+
+2 Why Angular?/features of angular?/ adavtange of angular ?
+	- Angular is a platform that makes it easy to build applications with the web.
+	- Angular have module ,declarative templates, dependency injection, services ,end to end tooling, and integrated best practices to solve development challenges. 
+
+	- Angular build applications that live on the web, mobile,or the desktop.
+
+	- Angular has matured into a client-side MVW framework  (i.e. Model-View-Whatever) for building of complex single page Application.
+
+	- It places equal importance on application testing & application writing, while simplifying the development process.
+
+	- Angular has tag line One framework Mobile & desktop,web.
+
+	- Cross platform Progressive web apps (i.e. It support all platform mobile,desktop,different os)
+
+	- It famous also for his speed & performance (bcz it is optimized for today's javascript virtual machine)
+
+	- It is universal framework (i.e. node.js with express js,.net,php,java & other servers for near-instants server side language)
+
+	- It has code splitting
+		- It has in build router system to load quickly
+		- Users only load code required to render the view they request.
+	
+	- You can create Quick UI views with simple & powerful template syntax.
+
+	- Angular is in build CLI(Command Line Interface) Tool,so you fast building,add components & tests it.
+	
+3 What is SPA Application?
+	
+index.html
+
+<html>
+	<head></head>
+	<body><body>
+</html>
+
+
+SPA - Single Page Application
+It contain only 1head+1 body
+SPA environment in the browser — no page reloads, no extra wait time.
+Angular These are, many E.g:
+Gmail, Google Maps, GitHub.
+ganna.com,sbi mutual funds
+	
+
+ summary & Interview Questions
+
+1 What is Angular?
+2 Why Angular?
+3 What is SPA Application?
+
+Today Lecture
+1 Angular Arch Overview
+	- Angular is component orientated arch.
+	- Component
+		1 View file => .html
+		2 styleshett => .css 
+		3 component file => .ts 
+		4 testing => spec.ts 
+		
+	  - metadata
+		- It gives extra information about component
+			
+			@Component({
+				selector:..
+				templateUrl:...
+				StyleUrls:[...]
+			})
+		
+	- data binding 
+		- data is flow from component to view 
+		- it is also called one way data binding
+		1 String interpolation
+		2 property binding
+		3 style binding
+		4 class binding
+	- event Binding
+		- data/request  flow from view to component
+		- it is also called one way data binding
+		- click,change,k/b event,mouse event 
+		
+	- directives
+		- it manage ur behaviour/ur dom structure  dynamically 
+		  1 atrribute directives
+			ngStyle,ngclass,....
+		  2 structurl directives
+			*ngIf,*ngFor,...
+		  3 component directives
+			....
+		  4 event directives
+			
+	- App module 
+		- by default one root module 
+		- it has one and more feature module / custom module.
+		
+		1 component declaration
+			- u have register component
+			
+		2 import
+			- to register ur inbuild module as well as ur user defined module
+		3 services => providers
+			- it is simple class 
+			- to connect ur backend 
+			- DI 
+		4 routing
+			- navigation from one component to another component
+			- we can send data 
+			- to achieve route security 
+			- lazy loading 
+	- Injector 
+		- u can inject any 3rd party services
+		- angular inbuild services also inject 
+		- u can inject json object 
+2 File structure 
+3 Angular Application Flow 
+
+summary & Interview Questions
+1 how Angular Arch?
+2 Explain File structure 
+3 How angular application flow 
