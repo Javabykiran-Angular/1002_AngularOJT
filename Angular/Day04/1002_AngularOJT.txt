@@ -1,0 +1,92 @@
+Last Lecture
+1 Angular Arch Overview
+	- Angular is component orientated arch.
+	- Component
+		1 View file => .html
+		2 stylesheet => .css 
+		3 component file => .ts 
+		4 testing => spec.ts 
+		
+	  - metadata
+		- It gives extra information about component
+			
+			@Component({
+				selector:..
+				templateUrl:...
+				StyleUrls:[...]
+			})
+		
+	- data binding 
+		- data is flow from component to view 
+		- it is also called one way data binding
+		1 String interpolation
+		2 property binding
+		3 style binding
+		4 class binding
+	- event Binding
+		- data/request  flow from view to component
+		- it is also called one way data binding
+		- click,change,k/b event,mouse event 
+		
+	- directives
+		- it manage ur behaviour/ur dom structure  dynamically 
+		  1 atrribute directives
+			ngStyle,ngclass,....
+		  2 structurl directives
+			*ngIf,*ngFor,...
+		  3 component directives
+			....
+		  4 event directives
+			
+	- App module 
+		- by default one root module 
+		- it has one and more feature module / custom module.
+		
+		1 component declaration
+			- u have register component
+			
+		2 import
+			- to register ur inbuild module as well as ur user defined module
+		3 services => providers
+			- it is simple class 
+			- to connect ur backend 
+			- DI 
+		4 routing
+			- navigation from one component to another component
+			- we can send data 
+			- to achieve route security 
+			- lazy loading 
+	- Injector 
+		- u can inject any 3rd party services
+		- angular inbuild services also inject 
+		- u can inject json object 
+2 File structure 
+3 Angular Application Flow 
+
+summary & Interview Questions
+1 how Angular Arch?
+2 Explain File structure 
+3 How angular application flow 
+
+Today Lecture
+1 create component manually
+2 create component through cli 
+ng g c student
+3 Data binding
+	- data flow from component to view 
+4 string interpolation
+<h1> {{name}}</h1>
+<h1> {{'Hi '+name}}</h1>
+<img src=" {{imgUrl}} ">
+<h2> {{num+num}}</h2>
+.ts 
+name:string='...'
+imgUrl:string='...'
+num:number=4;
+
+
+
+summary & Interview Questions
+1 What is component?
+2 How to create component?
+3 Explain string interpolation?
