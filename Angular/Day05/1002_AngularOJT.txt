@@ -1,0 +1,67 @@
+Last Lecture Agenda
+1 create component manually
+	
+	employee.component.html
+	employee.component.css
+	employee.component.ts 
+	
+	@Component({
+		selector:'app-employee'.
+		tempalteUrl:'./employee.component.html',
+		styleUrls:['./employee.component.css']
+	})
+	export class EmployeeComponent{
+	
+	}
+	
+	app.module.ts
+	EmployeeComponent
+	app.component.html
+	<app-employee>...
+
+2 create component through cli 
+	ng g c student 
+	
+employee.component.html 
+<app-student>
+	
+3 Data binding
+	- data flow from component to view 
+4 string interpolation
+<h1> {{name}}</h1>
+<h1> {{'Hi '+name}}</h1>
+<img src=" {{imgUrl}} ">
+<h2> {{num+num}}</h2>
+.ts 
+name:string='...'
+imgUrl:string='...'
+num:number=4;
+
+summary & Interview Questions
+1 What is component?
+2 How to create component?
+3 Explain string interpolation?
+
+Today's Lecture Agenda
+1 Property Binding
+2 String interpolation Vs Property Binding
+3 Style binding
+
+summary & Interview Questions
+1 What is property Binding?
+2 Explain Difference between property Binding & string interpolation
+3 What is Style Binding?
+	<h1 [style.color]="mycolor">
+	<h1 [style.color]="rating<4?'red':'green'">
+	<div [ngStyle]='jsonObj'
+	.ts 
+	mycolor:string='red';
+	rating:number=2;
+	jsonObj={
+		color:'blue',
+		fontSize:'32px',
+		'font-family':...
+	}
+	
+4 How we can apply style binding on condition?
+5 How we can apply multiple css property?
