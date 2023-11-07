@@ -1,0 +1,103 @@
+Last Lecture Agenda
+1 Property Binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	.ts file
+	
+	name:string='....';
+	imgUrl='..'
+
+2 String interpolation Vs Property Binding
+
+
+<div hidden=" {{ishidden}}">
+....
+
+<div [hidden]="ishidden">
+
+.ts file 
+ishidden:boolean=false;
+
+3 Style binding
+
+	<h1 [style.color]="mycolor">
+	<h1 [style.color]="rating<4?'red':'green'"
+	
+	<div [ngStyle]="jsonObj">
+	
+	.ts 
+	mycolor='...'
+	jsonObj={
+		color:...,
+		fontSize:'....',
+		'font-family':....
+	}
+
+
+summary & Interview Questions
+1 What is property Binding?
+2 Explain Difference between property Binding & string interpolation
+3 What is Style Binding?
+	<h1 [style.color]="mycolor">
+	<h1 [style.color]="rating<4?'red':'green'">
+	<div [ngStyle]='jsonObj'
+	.ts 
+	mycolor:string='red';
+	rating:number=2;
+	jsonObj={
+		color:'blue',
+		fontSize:'32px',
+		'font-family':...
+	}
+	
+4 How we can apply style binding on condition?
+5 How we can apply multiple css property?
+
+
+
+Today's Lecture Agenda
+1 Class Binding
+2 Event binding
+	- data flow from view to component
+	- click,change,...
+3 click
+4 $event
+
+
+summary & Interview Questions
+1 What is class Binding?
+	<h2 [class]="myclass">
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4">
+	<div [ngClass]="jsonObj">
+	.ts file
+	myclass:string='success';
+	rating:number=21;
+	jsonObj={
+		'success':!this.isError,
+		'danger': this.isError,
+		'special': this.isspecial
+	}
+2 How to apply multiple css classes?
+3 What is event binding?
+<button (click)="onClick()">
+<img (click)="onImage()">
+
+button (click)="onDoller($event)"
+
+.ts file 
+onClick(){
+...
+}
+
+onImage(){
+....
+}
+
+onDoller(myevent:any){
+	...
+	myevent.target.value 
+}
+
+4 what is use of $event?
