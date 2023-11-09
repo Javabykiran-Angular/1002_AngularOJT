@@ -1,0 +1,66 @@
+Last Lecture Agenda
+1 Class Binding
+2 Event binding
+	- data flow from view to component
+	- click,change,...
+3 click
+4 $event
+
+
+summary & Interview Questions
+1 What is class Binding?
+	<h2 [class]="myclass">
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4">
+	<div [ngClass]="jsonObj">
+	.ts file
+	myclass:string='success';
+	rating:number=21;
+	jsonObj={
+		'success':!this.isError,
+		'danger': this.isError,
+		'special': this.isspecial
+	}
+2 How to apply multiple css classes?
+3 What is event binding?
+<button (click)="onClick()">
+<img (click)="onImage()">
+
+button (click)="onDoller($event)"
+
+.ts file 
+onClick(){
+...
+}
+
+onImage(){
+....
+}
+
+onDoller(myevent:any){
+	...
+	myevent.target.value 
+}
+
+4 what is use of $event?
+
+Today's Lecture Agenda
+1 Template ref. variable
+2 Real Time example
+
+
+summary & Interview Questions
+1 What is template ref variable?
+#uniquename
+<input #inputname>
+<button (click)="onClick(inputname.value)">
+
+.ts file 
+onClick(myname:any){
+	....
+	myname.style.background='...';
+	...
+	myname.value
+}
+
+2 How to access data in component file 
