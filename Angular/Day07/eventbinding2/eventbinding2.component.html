@@ -1,0 +1,20 @@
+<p>eventbinding2 works!</p>
+<!-- template ref variable
+    - It gives Dom element information
+    - it holds the object /handle of particular element 
+    - we can manipulate the data as well as behaviour of html element
+    - u can apply any html tag
+    - we use # notation 
+    synatx #uniquename
+-->
+
+<!-- <input #inputname type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend(inputname)" >Send</button>
+<hr>
+<input #inputname1 type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend1(inputname1.value)" >Send</button> -->
+
+<input #num1 type="number" placeholder="Enter the Num1"><br><br>
+<input #num2 type="number" placeholder="Enter the Num2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)">Addition</button><br><br>
+<input type="text" [value]="result" placeholder="Result">
