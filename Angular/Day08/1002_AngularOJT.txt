@@ -1,0 +1,64 @@
+Last Lecture Agenda
+1 Template ref. variable
+2 Real Time example
+
+
+summary & Interview Questions
+1 What is template ref variable?
+#uniquename
+<input #inputname>
+<button (click)="onClick(inputname.value)">
+
+.ts file 
+onClick(myname:any){
+	....
+	myname.style.background='...';
+	...
+	myname.value
+}
+
+2 How to access data in component file 
+
+Today's Lecture Agenda
+1 change event
+2 K/B Event
+	1 keyup
+	2 keydown
+3 Event Filtering
+	- u can mentioned key code 
+	angular.io
+4 event binding without event handler
+	- to create a property to store a result
+	- if one line logic is there then we are used 
+5 Two way data binding
+
+summary & Interview Questions
+1 How to use change event?
+	<input (change)="onChange()">
+	
+	.ts 
+	onChange(){
+	console.log(".....")
+	}
+	
+2 possiblity scenario use change event?
+3 explain k/b event?
+	<input (keyup)="onKeyup()">
+	<input (keydown)="onKeydown()">
+	.ts 
+	onKeyup(){
+	.....
+	}
+	
+	onKeydown(){
+	..
+	}
+	
+4 What is event filtering?
+<input (keyup.enter)="onKeyEnter()">
+onKeyEnter(){
+....
+}
+5 What is Two way data binding?
+6 Explain ngModel?
+7 what is purpose of ngModel?

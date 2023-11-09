@@ -1,0 +1,28 @@
+<p>eventbinding3 works!</p>
+<!-- change
+    (change)="eventhandler()"
+-->
+
+<input #inputname (change)="onChange(inputname)" type="text" placeholder="Enter the name">
+<hr>
+<input #msg (keyup)="onKeyUp(msg.value)" type="text" placeholder="keyup event learn">
+<h2> {{result}} </h2>
+<hr>
+<input (keydown)="onKeyDown()" type="text" placeholder="keydown event learn">
+<hr>
+<input (keyup.enter)="onkeyEnter()" type="text" placeholder="Event Filtering">
+<hr>
+<button (click)="addition=8+8" >Addition</button>&nbsp;&nbsp;
+{{addition}}
+<hr>
+<!-- Two way data binding
+    - ngModel
+    - It is attribute directive
+    - to update data dynamically then we use two way data binding
+    - FormsModule=> we have register to app.module.ts file => import section 
+    - we use banana in the box noatation
+    [(ngModel)]="propertyname"
+    - all html tag u can use 
+-->
+<input type="text" [(ngModel)]="name" 
+placeholder="Enter the name ">{{name}}
