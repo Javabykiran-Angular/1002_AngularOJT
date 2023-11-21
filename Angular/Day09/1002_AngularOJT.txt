@@ -1,0 +1,56 @@
+Last Lecture Agenda
+1 Revision of Topic
+
+summary & Interview Questions
+1 Not Allowed For this Session Revise a Topic after diwali vacation 
+
+
+Today's Lecture Agenda
+1 Structural Directive
+	- it is used to update ur DOM Structure dynamically 
+	- * it is indication for structural directive
+	- 1 *ngIf => on basis of condition u can use 
+	  2 *ngFor => if u want iterate dynamically
+	  3 *ngSwitch => to execute specific case or condition 
+2 *ngIf directive
+ng-template => It is component directive
+3 *ngFor directive
+
+
+<div *ngIf="rating<4;else elsepart">
+	<h2>...
+</div>
+
+<ng-template #elsepart>
+	<h2>...
+</ng-template>
+
+.ts file 
+courese:string[]=[...];
+
+.html
+<ul>
+	<li *ngFor="let item of courese;index as i">
+		{{i++}} {{item}}</li>
+</ul>
+
+
+.ts 
+arrobj:any[]=[
+....
+];
+
+.html 
+<table>
+	<thead>
+		<th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of arrobj;index as i" >
+			<td> {{item.name}} </td>
+			...
+		</tr>
+summary & Interview Questions
+1 What is structural directive
+2 How *ngIf works?
+3 Why we use *ngFor directive?
