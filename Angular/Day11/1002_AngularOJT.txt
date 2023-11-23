@@ -1,0 +1,97 @@
+Last Lecture Agenda
+1 Mouse Event
+	1 mouseover
+	2 mouseout 
+	
+	<table >
+		<thead>
+			<th>...
+		</thead>
+		<tbody>
+			<tr (mouseover)="onMouseOver(item)"
+				*ngFor="let item of arronj;index as i"
+				(mouseout)="onMouseOut()"
+				
+			[ngClass]="{
+				'highlight':selected===item.name
+			}"
+			>
+				<td>...
+				
+		
+		onMouseOver(item:any){
+			this.selected=item.name;
+		}
+		
+		onMouseOut(){
+			this.selected='';
+		}
+	
+2 Task completion=> 5
+
+	<input #id>
+	<input #name>
+	<input #sal>
+	<button (click)="onAdd(id.value,name.value.sal.value)">
+	<table>
+		<tr *ngFor="let item of empData;index as i">
+			<td> {{item.id}}</td>
+			..
+			<td><button (click)="onremove(i)" > Remover</button>
+	
+	.ts file 
+	empData:any[]=[];
+	onAdd(id:any,name,sal){
+		let obj={
+			id:id,
+			name:name,
+			sal:sal
+		}
+		
+		this.empData.push(obj);
+	}
+	
+	onremove(i:any){
+		this.empData.splice(i,1);
+	}
+
+summary & Interview Questions
+1 How to use mouse event?
+2 Use of mouseover event?
+3 Use of mouseout event? 
+
+Today's Lecture Agenda
+1 ngSwitch Directive
+
+<input #colorname>
+	<button (click)="onSend(colorname.value)">
+	
+	<div [ngSwitch]="choice" >
+	
+		<div *ngSwitchCase="'red'"
+			[style.background]="choice">
+			..... {{choice}}
+		</div>
+		...
+		
+		<div *ngSwitchDefault
+			[ngStyle]="{
+			'backgroun':choice===''?'black':'orange'
+			'color': choice===''?'white':'black'
+			}
+			"
+		>
+			...
+			</div>
+	
+	</div>
+	
+	.ts file 
+	onSend(colorname:string){
+		this.choice=colorname.toLowerCase().trim();
+	}
+
+
+summary & Interview Questions
+1 How switch directive work?
+2 How to implement switch directive?
