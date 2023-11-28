@@ -1,0 +1,20 @@
+<p>parent1 works!</p>
+
+<input #inputname type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend(inputname.value)" >Send</button>
+<br><br>
+
+<input #inputdate type="date" ><br><br>
+<button 
+(click)="onSendDate(inputdate.value)" >Send Date</button>
+
+<hr>
+<app-child1 [parentStrData]="strdata" 
+    [parentJsonData]="jsonObj"
+
+    [parentMsgData]="msgdata"
+    [parentNumData]="parentAppData"
+
+    [parentDateData]="mydate"
+
+></app-child1>

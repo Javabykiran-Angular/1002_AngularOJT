@@ -1,0 +1,56 @@
+Last Lecture Agenda
+1 Task Checking & doubt resolving about Task Revision
+
+summary & Interview Questions
+1 This session Not allowed summary & Interview Questions
+
+Today's Lecture Agenda
+1 Component Interaction
+	- to send data(string/number/boolean/json/array/array of object ) from one component to another component
+	pre-requirest
+	- to make parent-child relationship esatblishment 
+	
+	
+2 @Input()
+	- to send data from parent to child 
+
+summary & Interview Questions
+
+	parent.html
+	
+	<input #inputname>
+	<button  (click)="onSend(inputname.value)"
+	 
+	<app-child1 [parentStrData]="strdata" 
+			[parentJsonData]="jsonObj"
+			[parentNameData]="namedata"
+	>
+	
+	parent.ts 
+	strdata:string='...';
+	jsonObj={
+	...
+	}
+	
+	onSend(inputname:any){
+		this.namedata=inputname;
+	}
+	
+	child1.ts
+	@Input() parentStrData:string='';
+	
+	@Input() parentJsonData:any={};
+	
+	@Input() parentNameData:string='';
+	
+	child1.html
+	<h2> {{parentStrData}}</h2>
+	<h2> {{parentJsonData.id}}</h2>
+	<h2> {{parentNameData}}
+	....
+
+1 What is Component interaction
+2 How to use component interaction
+3 why we use @input decorator?
+4 How we can send data from one component to another component?
+
