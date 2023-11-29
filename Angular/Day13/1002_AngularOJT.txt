@@ -1,0 +1,94 @@
+Last Lecture Agenda
+1 Component Interaction
+	- to send data(string/number/boolean/json/array/array of object ) from one component to another component
+	pre-requirest
+	- to make parent-child relationship esatblishment 
+	
+	
+2 @Input()
+	- to send data from parent to child 
+
+summary & Interview Questions
+
+	parent.html
+	
+	<input #inputname>
+	<button  (click)="onSend(inputname.value)"
+	 
+	<app-child1 [parentStrData]="strdata" 
+			[parentJsonData]="jsonObj"
+			[parentNameData]="namedata"
+	>
+	
+	parent.ts 
+	strdata:string='...';
+	jsonObj={
+	...
+	}
+	
+	onSend(inputname:any){
+		this.namedata=inputname;
+	}
+	
+	child1.ts
+	@Input() parentStrData:string='';
+	
+	@Input() parentJsonData:any={};
+	
+	@Input() parentNameData:string='';
+	
+	child1.html
+	<h2> {{parentStrData}}</h2>
+	<h2> {{parentJsonData.id}}</h2>
+	<h2> {{parentNameData}}
+	....
+
+1 What is Component interaction
+2 How to use component interaction
+3 why we use @input decorator?
+4 How we can send data from one component to another component?
+
+
+Today's Lecture Agenda
+1 Output Decorators
+	- To send a data from child component to parent component
+
+	child.html
+	<button (click)="onSend()">
+	
+	child.ts
+	
+	@Output() childStrEvent=new EventEmitter();
+	@Output() childarrObjEvent=new EventEmitter();
+	
+	strdata:string='...'
+	arrObj:any[]=[
+	...
+	];
+	
+	onSend(){
+	this.childStrEvent.emit(this.strdata);
+	this.childarrObjEvent.emit(this.arrObj);
+	}
+	
+	parent.html
+	
+	<h2> {{strdataReceived}}</h2>
+	
+	<table>
+	...
+	</table>
+	
+	<app-child2 (childStrEvent)="strdataReceived=$event" 
+			(childarrObjEvent)="arrobjData=$event"
+	>
+	
+	parent.ts
+	strdataReceived:string='';
+	arrobjData:any[]=[];
+
+
+summary & Interview Questions
+1 How to use output decorator?
+2 What is use of output decorator?
+3 how to Send data from child component to parent component?

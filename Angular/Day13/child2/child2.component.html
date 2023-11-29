@@ -1,0 +1,8 @@
+<p>child2 works!</p>
+
+<button (click)="onSend()" >Send</button>
+<br><br>
+<input #inputname type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onClick(inputname.value)">Click to Send </button>
+<br><br>
+<input #datedata type="date" (change)="onChange(datedata.value)" ><br><br>
