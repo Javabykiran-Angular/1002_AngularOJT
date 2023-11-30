@@ -1,0 +1,18 @@
+<p>parent3 works!</p>
+
+<div #divtag>
+    Access Div element in our parent ts file 
+</div>
+<br><br>
+
+<div class="maindiv">
+    <div class="btndiv">
+        <button (click)="onAccessProperty()" >Access Property</button>
+        <button (click)="onAccessMethod()">Access Method </button>
+    </div>
+
+    <div class="childdiv">
+        <app-child3></app-child3> 
+    </div>
+</div>
+

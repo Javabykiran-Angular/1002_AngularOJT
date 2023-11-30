@@ -1,0 +1,55 @@
+Last Lecture Agenda
+1 Output Decorators
+	- To send a data from child component to parent component
+
+	child.html
+	<button (click)="onSend()">
+	
+	child.ts
+	
+	@Output() childStrEvent=new EventEmitter();
+	@Output() childarrObjEvent=new EventEmitter();
+	
+	strdata:string='...'
+	arrObj:any[]=[
+	...
+	];
+	
+	onSend(){
+	this.childStrEvent.emit(this.strdata);
+	this.childarrObjEvent.emit(this.arrObj);
+	}
+	
+	parent.html
+	
+	<h2> {{strdataReceived}}</h2>
+	
+	<table>
+	...
+	</table>
+	
+	<app-child2 (childStrEvent)="strdataReceived=$event" 
+			(childarrObjEvent)="arrobjData=$event"
+	>
+	
+	parent.ts
+	strdataReceived:string='';
+	arrobjData:any[]=[];
+
+
+summary & Interview Questions
+1 How to use output decorator?
+2 What is use of output decorator?
+3 how to Send data from child component to parent component?
+
+
+Today's Lecture Agenda
+1 ViewChild
+	1 if u want access parent html element in parent ts file without event binding
+	2 U can access child property & child method in parent ts file to control child logic 
+	
+
+
+summary & Interview Questions
+1 How to use @ViewChild?
+2 What is purpose of ViewChild?
