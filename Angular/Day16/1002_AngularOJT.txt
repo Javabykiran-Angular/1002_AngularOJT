@@ -1,0 +1,59 @@
+Last Lecture Agenda
+1 Pipe
+	- it transform ur data without changing its original value 
+	
+2 Inbuild Pipe 
+
+summary & Interview Questions
+
+	string => lowercase,uppercase,titlecase,slice
+	percent => percent:'1.1'
+	currency => currency:'INR':'code'
+	number => number:'1.2-3'
+	date => date : => mediumDate,longDate,shortDate,dd:MM:yyyy,dd,MM,yyy,yy,hh:mm:ss a 
+	date:'longDate' | uppercase 
+
+1 What is Pipe 
+2 Why we Use pipe?
+3 how inbuild pipe work?
+4 which are inbuild pipes are there list it?
+
+Test 2 
+
+summary & Interview Questions
+This session is NA Due to Test 2
+
+Today's Lecture Agenda
+1 Custom Pipe 
+2 @Pipe
+ -It is class level decorator 
+  ng g p pipename 
+  
+3 PipeTransform
+4 transform method 
+
+summary & Interview Questions
+	
+	@Pipe({
+		name:'summary'
+	})
+	export class SummaryPipe implements PipeTransfrom {
+	
+		transform(value:any,start:number=0,end:number=20){
+			let temp=(<string> value);
+			
+			return (temp.subString(start,end)+"...")
+			
+		}
+			
+	}
+	
+	customPipe.html
+	
+	<h2> {{strdetails | summary}}</h2>
+	
+	<h2> {{strdetails | summary: 0:30 }}</h2>
+
+1 How to use Custom Pipe?
+2 Explain the steps to create custom pipe?
+3 Have you used custom pipe in your project?
