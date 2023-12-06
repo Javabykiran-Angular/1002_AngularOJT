@@ -1,0 +1,84 @@
+Last Lecture Agenda
+1 Custom Pipe 
+2 @Pipe
+ -It is class level decorator 
+  ng g p pipename 
+  
+3 PipeTransform
+4 transform method 
+
+summary & Interview Questions
+	
+	@Pipe({
+		name:'summary'
+	})
+	export class SummaryPipe implements PipeTransfrom {
+	
+		transform(value:any,start:number=0,end:number=20){
+			let temp=(<string> value);
+			
+			return (temp.subString(start,end)+"...")
+			
+		}
+			
+	}
+	
+	customPipe.html
+	
+	<h2> {{strdetails | summary}}</h2>
+	
+	<h2> {{strdetails | summary: 0:30 }}</h2>
+
+1 How to use Custom Pipe?
+2 Explain the steps to create custom pipe?
+3 Have you used custom pipe in your project?
+
+Today's Lecture Agenda
+1 Services
+	- It is simple class 
+2 Use of Services 
+	- it is used for code resulabilty 
+	- It is used for code maintainbilty 
+	- It is used to write a BL 
+	- It is used to connect ur backend server to your frontend server 
+	- it provides isolation to ur component from http end point URL 
+	- to use Authehication purpose 
+	
+	export class CourseService{
+		private course:string[]=[.....];
+		
+		getCourse(){
+			return this.course;
+		}
+		
+	}
+	
+	course.ts 
+	mycourse:string[]=[];
+	constructor(private service:CourseService){
+		// let service=new CourseService();
+		// this.mycourse=service.getCourse();
+	}
+	
+	ngOnInit(){
+		this.mycourse=this.service.getCourse();
+	}
+	
+	.html
+	<ul>
+		<li *ngFor="let item of mycourse">
+			{{item}}</li>
+	</ul>
+	
+	app.module.ts
+	providers:[CourseService]
+	
+	
+3 Dependancy Injection
+
+
+summary & Interview Questions
+1 What is service?
+2 What is use of service?
+3 How to integrate service in angular application?
+4 Which type of Dependancy Injection is used ?
