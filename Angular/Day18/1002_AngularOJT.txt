@@ -1,0 +1,133 @@
+Last Lecture Agenda
+1 Services
+	- It is simple class 
+2 Use of Services 
+	- it is used for code resulabilty 
+	- It is used for code maintainbilty 
+	- It is used to write a BL 
+	- It is used to connect ur backend server to your frontend server 
+	- it provides isolation to ur component from http end point URL 
+	- to use Authehication purpose 
+	
+	export class CourseService{
+		private course:string[]=[.....];
+		
+		getCourse(){
+			return this.course;
+		}
+		
+	}
+	
+	course.ts 
+	mycourse:string[]=[];
+	constructor(private service:CourseService){
+		// let service=new CourseService();
+		// this.mycourse=service.getCourse();
+	}
+	
+	ngOnInit(){
+		this.mycourse=this.service.getCourse();
+	}
+	
+	.html
+	<ul>
+		<li *ngFor="let item of mycourse">
+			{{item}}</li>
+	</ul>
+	
+	app.module.ts
+	providers:[CourseService]
+	
+	
+3 Dependancy Injection
+
+
+summary & Interview Questions
+1 What is service?
+2 What is use of service?
+3 How to integrate service in angular application?
+4 Which type of Dependancy Injection is used ?
+
+
+Today's Lecture Agenda
+1 Http Method
+	1 get => to fetch data from backend server 
+	2 post => to send data from frond end to backend server
+	3 put  => to update the particular data 
+	4 delete => to delete the particular data 
+
+2 Http Request/Response
+	
+	Http Request
+		it has 2 parts 
+		1 http header
+			- method 
+			- port no 
+			- Ip address 
+			- url 
+			- date time 
+			- request param
+			- content type 
+				- Application context
+				- json /pdf 
+				- image
+				- html/text 
+			- Auth token 
+			- cross origin 
+			
+			
+		2 http body
+			- data 
+				- json 
+				- image 
+				- xml
+				- html/text 
+	Http Response
+		it has 2 parts 
+		1 http header
+			- method 
+			- port no 
+			- Ip address 
+			- url 
+			- date time 
+			- request param
+			- content type 
+				- Application context
+				- json /pdf 
+				- image
+				- html/text 
+			- Auth token 
+			- cross origin 
+			- status code 
+				1 2xx => 200-299
+				2 3xx => 300-399 => redirection 
+				3 4xx => 400-499 => client side error 
+				4 5xx => 500-599 => server side error 
+			
+			
+		2 http body
+			- data 
+				- json 
+				- image 
+				- xml
+				- html/text 
+	
+	
+3 https://jsonplaceholder.typicode.com/posts
+	- it is fake service 
+	- bcz it is not store the value into the database if u give post,put,delete request that request will process it but it can not store ur data into the database.
+
+4 HttpClientModule
+	- HttpClient 
+	
+5 @Injectable
+6 What is observable
+7 get method
+
+
+summary & Interview Questions
+1 What is Http Request/Response
+2 Why we use HttpClientModule
+3 What is role of @Injectable
+4 What is observable
+5 How to integrate get method 
