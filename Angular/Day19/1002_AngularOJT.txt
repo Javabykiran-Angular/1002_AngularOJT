@@ -1,0 +1,93 @@
+Last Lecture Agenda
+1 Http Method
+	1 get => to fetch data from backend server 
+	2 post => to send data from frond end to backend server
+	3 put  => to update the particular data 
+	4 delete => to delete the particular data 
+
+2 Http Request/Response
+	
+	Http Request
+		it has 2 parts 
+		1 http header
+			- method 
+			- port no 
+			- Ip address 
+			- url 
+			- date time 
+			- request param
+			- content type 
+				- Application context
+				- json /pdf 
+				- image
+				- html/text 
+			- Auth token 
+			- cross origin 
+			
+			
+		2 http body
+			- data 
+				- json 
+				- image 
+				- xml
+				- html/text 
+	Http Response
+		it has 2 parts 
+		1 http header
+			- method 
+			- port no 
+			- Ip address 
+			- url 
+			- date time 
+			- request param
+			- content type 
+				- Application context
+				- json /pdf 
+				- image
+				- html/text 
+			- Auth token 
+			- cross origin 
+			- status code 
+				1 2xx => 200-299
+				2 3xx => 300-399 => redirection 
+				3 4xx => 400-499 => client side error 
+				4 5xx => 500-599 => server side error 
+			
+			
+		2 http body
+			- data 
+				- json 
+				- image 
+				- xml
+				- html/text 
+	
+	
+3 https://jsonplaceholder.typicode.com/posts
+	- it is fake service 
+	- bcz it is not store the value into the database if u give post,put,delete request that request will process it but it can not store ur data into the database.
+
+4 HttpClientModule
+	- HttpClient 
+	ng g s http 
+5 @Injectable
+6 What is observable
+7 get method
+
+
+summary & Interview Questions
+1 What is Http Request/Response
+2 Why we use HttpClientModule
+3 What is role of @Injectable
+4 What is observable
+5 How to integrate get method 
+
+Today's Lecture Agenda
+1 Post Method
+2 Put method
+3 Delete method 
+4 Error handling 
+
+summary & Interview Questions
+1 Explain Steps to connect backend server 
+2 how to use put method
+3 How handle error in angular?
