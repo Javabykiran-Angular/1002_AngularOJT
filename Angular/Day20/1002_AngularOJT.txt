@@ -1,0 +1,54 @@
+Last Lecture Agenda
+1 Post Method
+2 Put method
+3 Delete method 
+4 Error handling 
+
+summary & Interview Questions
+1 Explain Steps to connect backend server 
+2 how to use put method
+3 How handle error in angular?
+
+Today's Lecture Agenda
+1 Routing
+	- navigation form one component to another component
+	
+2 Routing steps
+	1 configure the route => app-routing.module.ts 
+		
+	2 <router-outlet> => component directive 
+	3 establish the link/navigate  between the component
+	
+3 Empty Path
+4 wild cart operator 
+5 send parameter
+
+summary & Interview Questions
+1 What is Routing?
+2 Why we use empty path & wild cart operator?
+3 How to perform routing?
+4 How to send parameter to component?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
