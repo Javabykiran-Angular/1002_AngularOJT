@@ -1,0 +1,93 @@
+Last Lecture Agenda
+1 Routing
+	- navigation form one component to another component
+	
+2 Routing steps
+	1 configure the route => app-routing.module.ts 
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			
+			{
+				path:"Page1",component:Page1Component
+			},
+			{
+				path:"Page2/:id",component:Page2Component
+			},
+			{
+				path:"Page1",component:Page1Component
+			},
+			{
+				path:"**",component:NotoFoundComponent
+			}
+		]
+		
+	2 <router-outlet> => component directive 
+		app.component.html 
+		<router-outlet>
+	3 establish the link/navigate  between the component
+	home.html 
+	<a routerLink="/Page1">Page1</a>
+	<a [routerLink]="['/Page2',myid]">Page2</a>
+	home.ts
+	myid:number=9;
+	
+	page2.ts
+	myid:number=0;
+	constructor(private route:ActivatedRoute){}
+	ngonInit(){
+		this.getDataFromUrl()
+	}
+	
+	getDataFromUrl(){
+			this.route.ParamMap
+			.subsrobe((param:any)=>{
+				....
+				this.myid=+param.get("id")
+			})
+	}
+	
+3 Empty Path
+4 wild cart operator 
+5 send parameter
+
+summary & Interview Questions
+1 What is Routing?
+2 Why we use empty path & wild cart operator?
+3 How to perform routing?
+4 How to send parameter to component?
+
+
+Today's Lecture Agenda
+1 send multiple parameter
+2 Send QueryParameter
+3 Dynamic Routing 
+4 child Routes 
+
+summary & Interview Questions
+1 How to Send Multiple parameter to component?
+2 How to send QueryParameter to component?
+3 What is Dynamic Routing?
+4 How Child Routes Work?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
