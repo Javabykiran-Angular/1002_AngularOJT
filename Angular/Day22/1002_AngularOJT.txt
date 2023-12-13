@@ -1,0 +1,85 @@
+Last Lecture Agenda
+1 send multiple parameter
+2 Send QueryParameter
+3 Dynamic Routing 
+4 child Routes 
+
+summary & Interview Questions
+1 How to Send Multiple parameter to component?
+2 How to send QueryParameter to component?
+3 What is Dynamic Routing?
+4 How Child Routes Work?
+
+
+
+Today's Lecture Agenda
+1 Lazy Loading
+2 Create Custom Module/feature module
+3 Create custom routing file 
+4 Modify the routing 
+
+
+	Backend Project
+	
+	1 Employee (one to one mapping)
+	2 country 
+	
+	Entity table 
+	1 Employee 
+		id => long => autoincrement=> primery key 
+		name => String
+		emailid => String
+		phoneno => String
+		password => String
+		gender => String
+		salary(optional )
+		createddate => Date 
+		createdBy => String
+		UpdatedDate => Date 
+		UpdatedBy => String
+		department  => String
+		status => String => (Active/inactive/suspend)
+		country => Country => forien key 
+	
+	2 country
+		cid => long => autoincrement => primery
+		cname => String
+		
+		1 get All Employee => list 
+		2 Save/create/add employee => string 
+		3 update employee => string 
+		4 delete employee => string => only delete employeee i don't want delete country table data 
+		5 getparticular employee by id => employee object 
+		6 get all country  => list 
+		7 Save/create/add country => string 
+		8 update country  => string 
+		9 delete country => string
+		10 get particular country by id => country object 
+	
+
+summary & Interview Questions
+1 What is Lazy Loading?
+2 How to implement Lazy Loading in Angular?
+3 How to create feature Module?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
