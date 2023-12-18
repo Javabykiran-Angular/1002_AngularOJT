@@ -1,0 +1,32 @@
+<p>demotdf works!</p>
+
+<div class="container" >
+    <div class="row">
+        <div class="col">
+
+               <div class="mb-3 mt-2">
+                    <label for=""> Username::</label>
+                    <input ngModel name="myusername" type="text" 
+                        #username="ngModel" required minlength="5"
+                        pattern="admin"
+                    placeholder="Enter the Username" class="form-control">
+
+                    <div class="alert alert-danger"
+                        *ngIf="username.touched && username.invalid"
+                    > ** Please Enter the Username...
+
+                        <div *ngIf="username.errors?.minlength">
+                            ** minimum character of username is 
+                            {{username.errors?.minlength.requiredLength}}
+                        </div>
+                        <div *ngIf="username.errors?.pattern">
+                            ** username is not appropriate Please enter proper username 
+                        </div>
+
+                    </div>
+
+               </div> 
+
+        </div>
+    </div>
+</div>

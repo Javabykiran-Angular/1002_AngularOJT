@@ -1,0 +1,68 @@
+Last Lecture Agenda
+1 Overview of Bootstrap
+	- It is css framework 
+	- It makes application attractive
+	- it geneartes template code 
+	- it makes application responsive
+	
+2 Integration of bootstrap
+	1 online integrate
+		- 24*7 internet support 
+		- CDN Link => content delivery n/w 
+	2 offline integrate
+		npm install bootstrap@5.0.* --save 
+		style.css
+		@import "~bootstrap/dist/css/bootstrap.css";
+		
+3 Basic grid system of bootstrap
+
+summary & Interview Questions
+1 Why we use bootstrap?
+2 How to integrate the bootstrap?
+3 How grid system work in bootstrap?
+
+
+Today's Lecture Agenda
+1 Template Driven Form => Its Angular 
+	- login form,sign up, f/b form , application form 
+	- Only basic level validation is done on view file => .html file 
+	- For that we use FormControl class 
+2 FormControl class
+	1 valid  => true/false 
+	2 invalid => true / false 
+	3 touched => true / false 
+	4 pristine => True /false 
+	5 dirty  => true / false
+	6 errors => It is object internally 
+	
+	Basic Steps to create object/instance
+	1 we have to use ngModel without its notation & u hv use name attribute 
+		- ngModel hoild the instance of FormControl class 
+	2 to create template ref variable & assign it ngModel 
+	3 for attribute validation we use errors object  for that we use required attribute given by html.
+
+summary & Interview Questions
+1 What id Template driven Form?
+2 Why we use Template driven form?
+3 How to Create Object of FormControl on view file?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
