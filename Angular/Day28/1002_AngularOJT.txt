@@ -1,0 +1,75 @@
+Last Lecture Agenda
+1 Project Work
+2 Login API 
+	
+	steps
+	
+	Regitration 
+		id => primary 
+		name
+		gnder
+		address
+		email => unique
+		pwd  => 
+	
+	response 
+	if user is valid 
+		{
+			msg:"valid user",
+			user:particular  user data {
+						......
+						}
+		}
+		
+		if user is not valid 
+		{
+			msg:"Invalid user",
+			user:particular  user data null
+		}
+	
+	
+	Class Controller{
+	
+	
+		@PostMapping("/login")
+		public ResponseEntity <String> login(@RequestBody LoginRequest )
+		
+		
+	}
+	input 
+		emailid
+		pwd 
+	
+	
+	
+3 Login Screen
+
+
+summary & Interview Questions
+Not Allowed 
+
+Today's Lecture Agenda
+1 Login Screen continue 
+
+summary & Interview Questions
+Not Allowed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
