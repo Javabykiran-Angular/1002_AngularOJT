@@ -1,0 +1,37 @@
+Last Lecture Agenda
+1 Modify The code as per Industry Pattern
+2 File Upload From FrontEnd
+
+summary  
+Interview Questions
+Not Allowed for Project Session 
+
+
+Today's Lecture Agenda
+1 Lazy Loading
+2 Display POP UP on Login
+3 Final Build
+
+
+summary 
+ Interview Questions
+Not Allowed for Project Session 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
